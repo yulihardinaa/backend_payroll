@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Database\Schema\Builder;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,5 +27,6 @@ class AppServiceProvider extends ServiceProvider
         config(['app.locale' => 'id']);
         \Carbon\Carbon::setLocale($this->app->getLocale());
         date_default_timezone_set('Asia/Jakarta');
+        Builder::defaultStringLength(191); // Update defaultStringLength
     }
 }
