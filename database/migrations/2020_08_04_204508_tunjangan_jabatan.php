@@ -17,7 +17,6 @@ class TunjanganJabatan extends Migration
             $table->bigIncrements('id_jabfung');
             $table->string('nama_jabatan');
             $table->bigInteger('nominal');
-            $table->primary('id_jabfung');
 
     
         });

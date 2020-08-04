@@ -17,7 +17,6 @@ class TunjanganStruktural extends Migration
             $table->bigIncrements('id_jabstruk');
             $table->string('nama_struktural');
             $table->bigInteger('nominal');
-            $table->primary('id_jabstruk');
    
         });
     }
