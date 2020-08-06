@@ -14,15 +14,16 @@ class Staff extends Migration
     public function up()
     {
         Schema::create('staff', function (Blueprint $table) {
-            $table->bigInteger('nik')->unique();
+            $table->integer('nik')->unique();
             $table->string('nama_staff');
             $table->string('email');
             $table->date('tgl_masuk');
             $table->string('golongan');
             $table->integer('jabstruk');
             $table->integer('tukin');
+            $table->integer('jumanak');
             $table->primary('nik');
-
+            
     
         });
     }

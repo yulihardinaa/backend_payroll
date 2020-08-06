@@ -22,7 +22,7 @@ class TunjanganStruktural extends Migration
         });
     }
 
-    /**
+    /**c
      * Reverse the migrations.
      *
      * @return void

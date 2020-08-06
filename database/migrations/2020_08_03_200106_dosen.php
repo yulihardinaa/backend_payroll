@@ -14,7 +14,7 @@ class Dosen extends Migration
     public function up()
     {
        Schema::create('dosen', function (Blueprint $table) {
-            $table->bigInteger('nik')->unique();
+            $table->integer('nik')->unique();
             $table->string('nama_dosen');
             $table->string('nidn')->unique();
             $table->string('email');
@@ -23,6 +23,7 @@ class Dosen extends Migration
             $table->string('jabfung');
             $table->bigInteger('jabstruk');
             $table->integer('tukin');
+            $table->integer('jumanak');
             $table->primary('nik');
 
     
